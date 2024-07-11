@@ -6,6 +6,7 @@ const Checkbox = () => {
     checkbox2: false,
     checkbox3: false,
     checkbox4: false,
+    checkbox5: false,
   });
   return (
     <div>
@@ -17,7 +18,8 @@ const Checkbox = () => {
             status.checkbox1 &&
             status.checkbox2 &&
             status.checkbox3 &&
-            status.checkbox4
+            status.checkbox4 &&
+            status.checkbox5
           }
           onChange={() =>
             setStatus({
@@ -25,6 +27,7 @@ const Checkbox = () => {
               checkbox2: !status.checkbox2,
               checkbox3: !status.checkbox3,
               checkbox4: !status.checkbox4,
+              checkbox5: !status.checkbox5,
             })
           }
         />
@@ -73,6 +76,17 @@ const Checkbox = () => {
           }
         />
         <label htmlFor="four"> : 4</label>
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="five"
+          checked={status.checkbox4}
+          onChange={() =>
+            setStatus({ ...status, checkbox5: !status.checkbox5 })
+          }
+        />
+        <label htmlFor="five"> : 5</label>
       </div>
     </div>
   );
