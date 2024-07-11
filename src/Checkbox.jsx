@@ -81,7 +81,7 @@ const Checkbox = () => {
         <input
           type="checkbox"
           id="five"
-          checked={status.checkbox4}
+          checked={status.checkbox5}
           onChange={() =>
             setStatus({ ...status, checkbox5: !status.checkbox5 })
           }
