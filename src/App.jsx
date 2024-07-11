@@ -25,7 +25,7 @@ function App() {
   const [name, setName] = useState("John");
   const [count, setCount] = useState(0);
 
-  const arr = ["one", "two", "three"];
+  // const arr = ["one", "two", "three"];
 
   return (
     <div className="App">
